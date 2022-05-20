@@ -1,0 +1,322 @@
+@font-face {
+    font-family: 'Roboto Slab';
+    src: url('../fonts/RobotoSlab-Bold.eot');
+    src: url('../fonts/RobotoSlab-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/RobotoSlab-Bold.woff2') format('woff2'),
+        url('../fonts/RobotoSlab-Bold.woff') format('woff'),
+        url('../fonts/RobotoSlab-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+body {
+    margin: 0;
+    font-family: "Roboto"
+}
+.form {
+    display: flex;
+}
+.wrapper {
+    margin: 0 auto;
+    max-width: 960px; 
+    padding-top: 25px;
+    padding-bottom: 25px;
+    position: relative;
+
+}
+hr {
+    margin: 30px 0;
+    max-width: 100%;
+    border: none;
+    border-top: 1px solid #e4e4ec;;
+}
+
+h1 {
+    font-size: 30px;
+    color: #1f222c;
+    font-weight: 700;
+    font-family: "Roboto Slab";
+    text-align: center;
+}
+
+h2 {
+    font-size: 20px;
+    color: #b3b3b3;
+    font-weight: 700;
+    font-family: "Roboto";
+}
+.input {
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+    padding: 12px 17px;
+    background-color: #ffffff;
+    border: 1px solid #cccccc;
+    border-radius: 3px;
+    outline: none;
+    
+    font-size: 14px;
+    color: #b3b3b3;
+    font-weight: 400;
+    font-family: "Roboto";
+}
+
+.form1 {
+    max-width: 330px;
+    
+}
+.form1 select {
+    font-size: 14px;
+    color: #1f222c;
+    font-weight: 400;
+    font-family: "Roboto";
+}
+.sumbit {
+    width: 100%;
+    padding: 15px 0;
+    color: #fff;
+    background-color: #12d661;
+    font-weight: 700;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+.sumbit:hover {
+    background-color: #07be51;
+}
+
+.part {
+    
+    justify-content: space-between;
+
+}
+.delivery {
+    flex-direction: column;
+}
+.status {
+    align-items: center;
+}
+.status,
+.data {
+    text-align: center;
+}
+.delivery2 {
+    width: 473px;
+    height: 114px;
+    border-radius: 3px;
+    background-color: #f7f7f7;
+    border: 1px solid #e5e5e5;
+    flex-direction: column;
+    justify-content: space-between;
+}   
+.delivery2 p {
+    margin: 0;
+    padding: 15px 20px;
+    width: 90px;
+    color: #b3b3b3;
+    font-weight: 700;
+}
+.r_button1 {
+    font-size: 14px;
+    color: #1f222c;
+    font-weight: 400;
+    font-family: "Roboto";
+}
+
+.radio + label {
+    position: relative;
+    padding: 0 25px 20px;
+}
+.disabled + label {
+    color: #b3b3b3;
+}
+
+
+.gender {
+    flex-direction: column;
+    width: 50%;
+   
+}
+
+.polia {
+    font-size: 18px;
+    color: #1f222c;
+    font-weight: 700;
+    font-family: "Roboto", sans-serif;
+    padding: 25px 0;
+    margin: 0;
+}
+
+.table td:last-child {
+    width: 340px;
+}
+
+table td:first-child {
+    font-size: 14px;
+    color: #1f222c;
+    font-weight: 400;
+    font-family: "Roboto", sans-serif;
+    padding: 20px 0;
+    padding-top: 18px;
+    vertical-align: top;
+    padding-bottom: 18px;
+}
+.pass {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 12px 17px;
+    padding-right: 0;
+    margin: 4px 0;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+.form_city select {
+    width: 100%;
+    padding: 10.8px 14px;
+    padding-right: 0;
+    border-radius: 3px;
+    outline: none;
+}
+.table_foto > label:before {
+    content: "Виберіть файл";
+    width: 171px;
+    height: 42px;
+    border: 1px solid #3e6aff;
+    border-radius: 3px;
+    box-sizing: border-box;
+    background-color: #3e6aff;
+    text-align: center;
+    color: #fff;
+    padding-top: 13px;
+    font-size: 14px;
+    font-weight: 700;
+    font-family: "Roboto" , sans-serif;
+    display: inline-block;
+    cursor: pointer;
+}
+.radio_style6 {
+    visibility: hidden;
+    position: absolute;
+}
+
+.form_table {
+    max-width: 680px;
+}
+
+.t_hr {
+    width: 100%;
+    margin: 30px 0;
+    box-sizing: border-box;
+}
+.table_name input,
+.table_info input {
+    width: 100%;
+    padding: 11.5px;
+    margin-top: 7px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+.table_name label,
+.table_info label {
+    display: inline-block;
+    font-size: 13px;
+    color: #b3b3b3;
+    padding-bottom: 5px;
+}
+.table_info select {
+    width: 100%;
+    margin: 4.5px 0;
+    background-color: transparent;
+    border: 1px solid #ccc;
+    padding: 10.8px 14px;
+    padding-right: 0;
+    font-size: 14px;
+    color: #1f222c;
+    font-weight: 400;
+    font-family: "Roboto", sans-serif;
+    border-radius: 3px;
+    outline: none;
+}
+
+
+.button .register,
+.button .back {
+    width: 180px;
+    height: 43px;
+    cursor: pointer;
+    border-radius: 3px;
+    font-weight: 700;
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
+    
+    margin-bottom: 145px;
+}
+.button {
+    
+    justify-content: space-between;
+    
+}
+.button .register {
+    
+    border: 1px solid #12d661;
+    background-color: #12d661;
+    color: #fff;
+}
+.button .register:hover {
+    background-color: #07be51;
+    }
+.button .back {
+    
+    border: 1px solid #85868d;
+    background-color: #fff;
+    color: #6e6f77;
+}
+.button .back:hover {
+background-color: #85868d;
+color: #fff;
+}
+
+
+
+
+
+.form_fixed {
+    position: relative; 
+    padding: 21px;
+    width: 310px;
+    border-radius: 5px;
+    background-color: #fafafa;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 5px;
+    box-sizing: border-box;
+    box-shadow: 0px 5px 6px rgb(0 0 0 / 15%);
+    background-color: #fafafa;
+    border: 1px solid #e6e6e6;
+}
+.form6 {
+    position: fixed;
+    top: 22%;
+    right: 14%;
+}
+.form_fixed label {
+    font-size: 13px;
+    color: #b3b3b3;
+    
+}
+.form_fixed input {
+    height: 24px;
+    border-radius: 3px;
+    background-color: #ffffff;
+    border: 1px solid #cccccc;
+    padding: 7px 17px;
+}
+.form_fixed .rem-pass {
+    font-size: 13px;
+    color: #1f222c;
+    font-weight: 400;
+    font-family: "Roboto";
+}
+
+
