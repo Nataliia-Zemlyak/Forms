@@ -153,9 +153,7 @@ h2 {
     font-weight: 400;
     font-family: "Roboto";
 }
-.non-astive + label {
-    color:#b3b3b3
-}
+
 .status {
     align-items: center;
 }
@@ -200,17 +198,20 @@ h2 {
 }
 .checkbox + label {
     position: relative;
-    padding: 11px 25px 0;
-    
-    font-size: 13px;
+    padding: 0px 22px 14px;
+    padding-top: 10px;
+    font-size: 14px;
     line-height: 21px;
-    color: #666666;
+    color: #1f222c;
 }
-
+.non-active + label {
+    color: #b3b3b3;
+}
 .checkbox + label:before, 
 .checkbox + label:after {
     content: "";
     position: absolute;
+
 }
 .checkbox + label:after {
     left: 6px;
@@ -541,7 +542,7 @@ color: #fff;
 }
 .form6 {
     position: fixed;
-    top: 22%;
+    top: 136px;
     right: 18%;
 }
 .form_fixed label {
