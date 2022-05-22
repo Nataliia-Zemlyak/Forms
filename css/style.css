@@ -70,6 +70,15 @@ h2 {
     border: 1px solid #3e6aff;
 }
 
+.text {
+    resize: vertical;
+    width: 100%;
+    max-width: 462px;
+    min-height: 130px;
+    max-height: 140px;
+    
+}
+
 
 .form1 {
     max-width: 330px;
@@ -135,6 +144,52 @@ h2 {
     font-family: "Roboto";
 }
 
+.checkbox {
+    visibility: hidden;
+    position: absolute;
+    line-height: 21px;
+}
+.checkbox + label {
+    position: relative;
+    padding: 8px 25px 20px;
+    margin-left: 30px;
+    font-size: 13px;
+    line-height: 21px;
+    color: #666666;
+}
+
+.checkbox + label:before, 
+.checkbox + label:after {
+    content: "";
+    position: absolute;
+}
+.checkbox + label:after {
+    left: 6px;
+    top: 11px;
+    
+}
+.checkbox:checked + label:after {
+    width: 4px;
+    height: 9px;
+    border-bottom: 2px solid #244dd7;
+    border-right: 2px solid #244dd7;
+    transform: rotate(45deg);
+}
+.checkbox:checked + label:before {
+    background-color: #ffffff;
+    border: 1px solid #3e6aff;
+}
+.checkbox + label:before {
+    left: 0;
+    top: 10px;
+    width: 16px;
+    height: 16px;
+    border-radius: 3px;
+    background-color: #ffffff;
+    border: 1px solid #cccccc;
+}
+
+
 .radio + label {
     position: relative;
     padding: 0 25px 20px;
@@ -149,6 +204,31 @@ h2 {
     width: 50%;
    
 }
+
+.radio_man,
+.radio_woman {
+    visibility: hidden;
+    position: absolute;
+}
+.radio_man + label,
+.radio_woman + label {
+    position: relative;
+    padding: 8px 25px;
+    margin-left: 30px;
+    font-size: 13px;
+    line-height: 21px;
+}
+.radio_man + label:before,
+.radio_woman +label:before, 
+.radio_man + label:after,
+.radio_woman + label:after {
+    content: "";
+    position: absolute;
+}
+
+
+
+
 
 .polia {
     font-size: 18px;

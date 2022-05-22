@@ -42,21 +42,21 @@
                                 <label for="self-pickup">Самовивіз</label>
                     </div>
                     <div class="delivery form">
-                        <input type="checkbox" name="r_button" id="contract" class="r_button1">
+                        <input type="checkbox" name="r_button" id="contract" class="checkbox">
                         <label for="contract">Прочитав умови договору</label> 
-                        <input type="checkbox" name="r_button" id="gdp" class="r_button1">
+                        <input type="checkbox" name="r_button" id="gdp" class="checkbox">
                         <label for="gdp">Згідний з ПДВ 9%</label> 
-                        <input type="checkbox" name="r_button" id="news" class="r_button" disabled>
+                        <input type="checkbox" name="r_button" id="news" class="checkbox" disabled>
                         <label for="news">Отримувати новини на ел. пошту</label> 
                     </div>
                     <div class="delivery2 form">
                         <section class="status form">
                             <p>Статус</p>
-                            <input type="checkbox" name="r_button" id="novelty" class="r_button1">
+                            <input type="checkbox" name="r_button" id="novelty" class="checkbox">
                             <label for="novelty">Новинки</label> 
-                            <input type="checkbox" name="r_button" id="promotional_goods" class="r_button1">
+                            <input type="checkbox" name="r_button" id="promotional_goods" class="checkbox">
                             <label for="promotional_goods">Акційні товари</label> 
-                            <input type="checkbox" name="r_button" id="sale" class="r_button1">
+                            <input type="checkbox" name="r_button" id="sale" class="checkbox">
                             <label for="sale">Розпродаж</label> 
                         </section>
                         <section class="data form">
@@ -76,11 +76,11 @@
                 <div class="style_chek form">
                     <div class="gender form">
                         <section>
-                        <input type="radio" name="gender" value="Чоловік" id="male">
+                        <input type="radio" class="radio_man" name="gender" value="Чоловік" id="male">
                         <label for="male">Чоловік</label>
                         </section>
                         <section>
-                        <input type="radio" name="gender" value="Жінка" id="female">
+                        <input type="radio" class="radio_woman" name="gender" value="Жінка" id="female">
                         <label for="female">Жінка</label>
                         </section>
                     </div>
@@ -141,7 +141,7 @@
                         <tr>
                             <td><label for="td_coment">Коментарій:</label></td>
                             <td>
-                                <textarea class="text" placeholder="Введіть текст повідомлення" class="input" id="td_coment"></textarea><br>
+                                <textarea class="text input" placeholder="Введіть текст повідомлення" class="input" id="td_coment"></textarea><br>
                                 <button class="sumbit">Зареєструватися</button>
                             </td>
                         </tr>
@@ -207,7 +207,7 @@
                             </tr>
                             <tr>
                                 <td colspan="3">
-                                    <input type="checkbox" id="agree">
+                                    <input type="checkbox" id="agree" class="checkbox">
                                     <label for="agree">Я погоджуюсь з правилами оплати та доставки товару</label>
                                 </td>
                             </tr>
@@ -222,7 +222,6 @@
                 
                 
             </div>
-            <hr>
 
             <div class="form6 wrapper">
                 <form action="index.html" method="post">
@@ -234,7 +233,7 @@
                         <label for="fix_pass">Пароль</label>
                         <input class="input fixed-input" id="fix_pass" type="password">  
                         <a href="#">Забули пароль?</a>  
-                        <input class="input check" id="rem-pass" type="checkbox">                
+                        <input class="checkbox" id="rem-pass" type="checkbox">                
                         <label class="rem-pass" for="rem-pass">Запам’ятати пароль</label>
                         <button class="sumbit">Увійти</button>
                     </div>
