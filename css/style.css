@@ -19,14 +19,14 @@ body {
 }
 .wrapper {
     margin: 0 auto;
-    max-width: 960px; 
+    max-width: 75%; 
     padding-top: 25px;
     padding-bottom: 25px;
     position: relative;
 
 }
 hr {
-    margin: 30px 0;
+    margin: 25px auto;
     max-width: 100%;
     border: none;
     border-top: 1px solid #e4e4ec;;
@@ -71,11 +71,12 @@ h2 {
 }
 
 .text {
+    margin: 5px 0;
     resize: vertical;
-    width: 100%;
     max-width: 462px;
     min-height: 130px;
     max-height: 140px;
+    font-size: 13px;
     
 }
 
@@ -154,28 +155,24 @@ h2 {
     font-family: "Roboto";
 }
 
-.status {
-    align-items: center;
-}
-.status,
-.data {
-    text-align: center;
-}
+
 .delivery2 {
-    width: 473px;
-    height: 114px;
+    width: 470px;
+    height: 115px;
     border-radius: 3px;
     background-color: #f7f7f7;
     border: 1px solid #e5e5e5;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
 }   
 .delivery2 p {
     margin: 0;
     padding: 15px 20px;
+    padding-top: 10px;
     width: 90px;
     color: #b3b3b3;
     font-weight: 700;
+    box-sizing: border-box;
 }
 .data input {
     padding: 10px 17px;
@@ -198,11 +195,13 @@ h2 {
 }
 .checkbox + label {
     position: relative;
-    padding: 0px 22px 14px;
-    padding-top: 10px;
+    padding: 0px 25px 10px;
+    padding-top: 12px;
     font-size: 14px;
-    line-height: 21px;
     color: #1f222c;
+}
+.checkbox + .lab {
+    padding-bottom: 0;
 }
 .non-active + label {
     color: #b3b3b3;
@@ -325,6 +324,7 @@ input:checked:before {
 
 .r_button {
     visibility: hidden;
+    position: absolute;
 }
 
 
@@ -388,19 +388,20 @@ input:checked:before {
     width: 340px;
 }
 
-table td:first-child {
+
+.table_name td,
+.table_info td {
+    width: 33.3%;
+}
+.table1 td:first-child {
     font-size: 14px;
-    color: #1f222c;
     font-weight: 400;
-    font-family: "Roboto", sans-serif;
+    font-family: "Roboto";
     padding: 20px 0;
     padding-top: 18px;
-    vertical-align: top;
-    padding-bottom: 18px;
-    
-}
-.table1 td:first-child{
     padding-right: 80px;
+    vertical-align: top;
+    padding-bottom: 18px
 }
 .pass {
     box-sizing: border-box;
@@ -451,22 +452,10 @@ background-color: #2857f4;
     max-width: 680px;
 }
 
-.t_hr {
-    width: 100%;
-    margin: 30px 0;
-    box-sizing: border-box;
-}
 .table_name{
     max-width: 680px;
 }
-.table_name input,
-.table_info input {
-    width: 100%;
-    padding: 11.5px;
-    margin-top: 7px;
-    border: 1px solid #ccc;
-    box-sizing: border-box;
-}
+
 .table_name label,
 .table_info label {
     display: inline-block;
@@ -475,12 +464,9 @@ background-color: #2857f4;
     padding-bottom: 5px;
 }
 .table_info select {
-    width: 100%;
-    margin: 4.5px 0;
+    
     background-color: transparent;
     border: 1px solid #ccc;
-    padding: 10.8px 14px;
-    padding-right: 0;
     font-size: 14px;
     color: #1f222c;
     font-weight: 400;
@@ -582,14 +568,15 @@ color: #fff;
 .close-label:before {
     content: "+";
     position: absolute;
-    width: 12px;
-    height: 12px;
+    width: 10px;
+    height: 10px;
     top: 9px;
     right: 7px;
     font-size: 20px;
     color: #b3b3b3;
     transform: rotate(45deg);
     z-index: 1;
+    cursor: pointer;
 }
 .close-checkbox:checked ~ .fixed {
     display: none;
@@ -600,9 +587,17 @@ color: #fff;
 }
 .form_fixed a {
     text-decoration: none;
+    font-size: 13px;
+    color: #3e6aff;
+    font-weight: 400;
+    font-family: "Roboto";
 }
 .form_fixed a:hover {
     text-decoration: underline;
+}
+
+.close-label:hover:before {
+    color: #949494;
 }
 
 
