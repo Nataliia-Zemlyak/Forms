@@ -63,10 +63,10 @@ h2 {
 }
 .input:hover,
 .input:focus,
-.form_city select:hover {
+.form_city select:hover,
+.table_info select:hover {
     border-radius: 3px;
     filter: drop-shadow(0 0 2.5px rgba(62,106,255,0.55));
-    background-color: #ffffff;
     border: 1px solid #3e6aff;
 }
 
@@ -85,7 +85,8 @@ h2 {
     max-width: 330px;
     
 }
-.form1 select {
+.form1 select,
+.table_info select {
     font-size: 14px;
     color: #1f222c;
     font-weight: 400;
@@ -107,17 +108,18 @@ h2 {
     background-color: #07be51;
 }
 .select,
-.select_ind {
+.select_ind,
+.table_info select {
     position: relative;
     display: inline-block;
     width: 100%;
     background-color: #fff;
 }
 .select select,
-.select_ind select {
+.table_info select {
     position: relative;
     -webkit-appearance: none;
-    z-index: 0;
+    background-color: transparent;
 }
 .select:before {
     content: "";
@@ -127,18 +129,9 @@ h2 {
     top: 17px;
     border: 6px solid transparent;
     border-top-color: #000;
-    z-index: 1;
+    z-index: 0;
 }
-.select_ind:before {
-    content: "";
-    position: absolute;
-    right: 20px;
-    background-color: #fff;
-    top: 21px;
-    border: 6px solid transparent;
-    border-top-color: #000;
-    z-index: 1;
-}
+
 
 .part {
     
@@ -191,12 +184,11 @@ h2 {
 .checkbox {
     visibility: hidden;
     position: absolute;
-    line-height: 21px;
+    
 }
 .checkbox + label {
     position: relative;
-    padding: 0px 25px 10px;
-    padding-top: 12px;
+    padding: 0px 25px 20px;
     font-size: 14px;
     color: #1f222c;
 }
@@ -214,7 +206,7 @@ h2 {
 }
 .checkbox + label:after {
     left: 6px;
-    top: 11px;
+    top: 2px;
     
 }
 .checkbox:checked + label:after {
@@ -230,7 +222,7 @@ h2 {
 }
 .checkbox + label:before {
     left: 0;
-    top: 10px;
+    top: 0;
     width: 16px;
     height: 16px;
     border-radius: 3px;
@@ -250,7 +242,7 @@ h2 {
     position: relative;
     padding-left: 90px;
     cursor: pointer;
-    line-height: 85px;
+    line-height: 80px;
     font-size: 16px;
     color: #1f222c;
     font-weight: 700;
@@ -297,6 +289,7 @@ h2 {
     width: 21px;
     border-radius: 50px;
     background-color: #ffffff;
+    transition: all 0.3s ease;
 }
 input:checked:before {
     left: 22px;
@@ -361,7 +354,7 @@ input:checked:before {
 
 .r_button + label {
     position: relative;
-    padding: 0 25px;
+    padding: 0 25px 20px;
 }
 .disabled + label {
     color: #b3b3b3;
@@ -413,7 +406,8 @@ input:checked:before {
     border-radius: 3px;
 }
 
-.form_city select {
+.form_city select,
+.table_info select {
     width: 100%;
     padding: 10.8px 14px;
     padding-right: 0;
@@ -437,7 +431,7 @@ input:checked:before {
     display: inline-block;
     cursor: pointer;
 }
-.table_foto > label:hover{
+.table_foto > label:hover:before{
 
 border-radius: 3px;
 filter: drop-shadow(0px 2px 2.5px rgba(15,40,126,0.35));
@@ -515,6 +509,7 @@ background-color: #2857f4;
 background-color: #85868d;
 color: #fff;
 }
+
 
 
 
