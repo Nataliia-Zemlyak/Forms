@@ -25,12 +25,17 @@ body {
     position: relative;
 
 }
+
 hr {
     margin: 25px auto;
     max-width: 100%;
     border: none;
     border-top: 1px solid #e4e4ec;;
 }
+.hr {
+    margin: 65px auto;
+}
+
 
 h1 {
     font-size: 30px;
@@ -167,6 +172,11 @@ h2 {
     font-weight: 700;
     box-sizing: border-box;
 }
+
+.status,
+.data {
+    align-items: center;
+}
 .data input {
     padding: 10px 17px;
     border: 1px solid #ccc;
@@ -206,7 +216,7 @@ h2 {
 }
 .checkbox + label:after {
     left: 6px;
-    top: 2px;
+    top: 1px;
     
 }
 .checkbox:checked + label:after {
@@ -222,7 +232,7 @@ h2 {
 }
 .checkbox + label:before {
     left: 0;
-    top: 0;
+    top: -1px;
     width: 16px;
     height: 16px;
     border-radius: 3px;
@@ -354,7 +364,7 @@ input:checked:before {
 
 .r_button + label {
     position: relative;
-    padding: 0 25px 20px;
+    padding: 0 25px 17px;
 }
 .disabled + label {
     color: #b3b3b3;
